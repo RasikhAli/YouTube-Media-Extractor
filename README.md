@@ -1,13 +1,12 @@
 # YouTube Media Extractor
 
-A sleek and simple web app built with **Flask** that allows users to fetch and download YouTube metadata or videos. Designed with a modern UI featuring responsive design and light/dark mode support.
+A sleek and simple web app built with **Flask** that allows users to fetch and download YouTube videos. Designed with a modern UI featuring responsive design and light/dark mode support.
 
 ---
 
 ## ✨ Features
 
 - 📥 Download YouTube videos using `yt-dlp`
-- 📊 Export metadata (title, views, duration, etc.) to Excel
 - 🎨 Beautiful light/dark theme with a toggle button
 - 🧊 Glassmorphism-styled cards and smooth transitions
 - 📸 Fixed-size thumbnails for a uniform layout
