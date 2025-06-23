@@ -18,9 +18,9 @@ A sleek and simple web app built with **Flask** that allows users to fetch and d
 
 | Light Mode | Dark Mode |
 |------------|-----------|
-| ![Light Mode 1](screenshots/screen_1.png) | ![Dark Mode 1](screenshots/screen_2.png) |
-| ![Light Mode 2](screenshots/screen_3.png) | ![Dark Mode 2](screenshots/screen_4.png) |
-| ![Download View](screenshots/screen_5.png) | |
+| ![Light Mode 1](screens/screen_1.png) | ![Dark Mode 1](screens/screen_2.png) |
+| ![Light Mode 2](screens/screen_3.png) | ![Dark Mode 2](screens/screen_4.png) |
+| ![Download View](screens/screen_5.png) | |
 
 
 ---
