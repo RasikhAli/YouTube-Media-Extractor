@@ -1,0 +1,163 @@
+:root {
+  --yt-primary: #e50914;
+  --yt-bg-dark: #121212;
+  --yt-bg-light: #f9f9f9;
+  --yt-card-dark: #1e1e1e;
+  --yt-card-light: #ffffff;
+  --yt-text-dark: #f1f1f1;
+  --yt-text-light: #1a1a1a;
+  --yt-muted-dark: #bbbbbb;
+  --yt-muted-light: #666;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--yt-bg-dark);
+  color: var(--yt-text-dark);
+  transition: background-color 0.3s, color 0.3s;
+  /* min-height: 100vh; */
+}
+
+body.light-mode {
+  background-color: var(--yt-bg-light);
+  color: var(--yt-text-light);
+}
+
+/* Container */
+.container {
+  max-width: 70%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Card style */
+.glass-card, .yt-card {
+  background-color: var(--yt-card-dark);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+/* Uniform card height */
+.glass-card, .yt-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: fix inconsistent card padding/margins */
+.glass-card .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+body.light-mode .glass-card,
+body.light-mode .yt-card {
+  background-color: var(--yt-card-light);
+}
+
+/* Inputs */
+.form-control,
+.input-group-text {
+  background-color: #2a2a2a;
+  color: var(--yt-text-dark);
+  border: 1px solid #444;
+}
+
+body.light-mode .form-control,
+body.light-mode .input-group-text {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--yt-primary);
+  border-color: var(--yt-primary);
+}
+
+.btn-outline-primary {
+  color: var(--yt-primary);
+  border-color: var(--yt-primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--yt-primary);
+  color: white;
+}
+
+/* Toggle button */
+.mode-toggle-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999;
+}
+
+/* Fix thumbnail sizes */
+.video-thumbnail {
+  height: 180px;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Table */
+.table {
+  background-color: transparent;
+  color: inherit;
+}
+
+.table thead {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Card body should fill and align download button */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Download button always at the bottom */
+.card-body .btn {
+  margin-top: auto;
+}
+
+/* Improve .text-muted readability in dark mode */
+.text-muted {
+  color: var(--yt-muted-dark) !important;
+  text-align: justify;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: var(--yt-muted-dark);
+}
+
+body.light-mode .card-text {
+  color: var(--yt-muted-light);
+}
+
+body.light-mode .text-muted {
+  color: var(--yt-muted-light) !important;
+}

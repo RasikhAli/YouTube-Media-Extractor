@@ -1,0 +1,6 @@
+Flask
+pandas
+yt-dlp
+requests
+openpyxl
+xlsxwriter
