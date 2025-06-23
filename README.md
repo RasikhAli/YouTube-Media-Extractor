@@ -39,7 +39,7 @@ A sleek and simple web app built with **Flask** that allows users to fetch and d
    ```bash
    git clone https://github.com/RasikhAli/YouTube-Media-Extractor.git
    cd youtube-downloader-app
-````
+   ```
 
 2. Install dependencies:
 
